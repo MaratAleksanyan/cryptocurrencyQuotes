@@ -1,0 +1,79 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="content mat-elevation-z8 page-content">
+	<mat-card class="main-card page-content">
+		<mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column">
+			<h2>Cryptocurrency Quotes</h2>
+		</mat-card-title>
+		<mat-card-content>
+
+			<mat-form-field appearance="standard">
+				<mat-label>Filter</mat-label>
+				<input formControlName="filter" name="filter" matInput (keyup)="applyFilter($event)" #input>
+			</mat-form-field>
+
+			<table mat-table [dataSource]="coinsInfo" class="mat-elevation-z8">
+
+			<!--- Note that these columns can be defined in any order.
+				The actual rendered columns are set as a property on the row definition" -->
+
+				<!-- Name Column -->
+				<ng-container matColumnDef="name">
+				<th mat-header-cell *matHeaderCellDef> Name </th>
+				<td mat-cell *matCellDef="let element"> {{element.name}} </td>
+				</ng-container>
+
+				<!-- Symbol Column -->
+				<ng-container matColumnDef="symbol">
+				<th mat-header-cell *matHeaderCellDef> Symbol </th>
+				<td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+				</ng-container>
+
+				<!-- Slug Column -->
+				<ng-container matColumnDef="slug">
+				<th mat-header-cell *matHeaderCellDef> Slug </th>
+				<td mat-cell *matCellDef="let element"> {{element.slug}} </td>
+				</ng-container>
+
+				<!-- Price Column -->
+				<ng-container matColumnDef="price">
+				<th mat-header-cell *matHeaderCellDef> Price </th>
+				<td mat-cell *matCellDef="let element"> {{element.quote.USD.price}} </td>
+				</ng-container>
+
+				<!-- percent_change_1h Column -->
+				<ng-container matColumnDef="percent_change_1h">
+				<th mat-header-cell *matHeaderCellDef> Percent change last 1 hours </th>
+				<td mat-cell *matCellDef="let element"> {{element.quote.USD.percent_change_1h}} </td>
+				</ng-container>
+
+				<!-- percent_change_24h Column -->
+				<ng-container matColumnDef="percent_change_24h">
+				<th mat-header-cell *matHeaderCellDef> Percent change last 24 hours </th>
+				<td mat-cell *matCellDef="let element"> {{element.quote.USD.percent_change_24h}} </td>
+				</ng-container>
+
+				<!-- Capitalization Column -->
+				<ng-container matColumnDef="market_cap">
+				<th mat-header-cell *matHeaderCellDef> Capitalization in USD </th>
+				<td mat-cell *matCellDef="let element"> {{element.quote.USD.market_cap}} </td>
+				</ng-container>
+
+				<!-- Last updated Column -->
+				<ng-container matColumnDef="last_updated">
+				<th mat-header-cell *matHeaderCellDef> Last updated </th>
+				<td mat-cell *matCellDef="let element"> {{element.last_updated}} </td>
+				</ng-container>
+
+				<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+				<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+			</table>
+		</mat-card-content>
+
+		<mat-card-actions class="button-to-update">
+			<section class="action-button">
+				<button class="colored mat-button-base" mat-raised-button (click)="getDevicesInfo()">Update</button>
+			</section>
+		</mat-card-actions>
+	</mat-card>
+</div>
+
+

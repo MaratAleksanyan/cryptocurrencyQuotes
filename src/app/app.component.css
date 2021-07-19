@@ -1,0 +1,9 @@
+main {
+    padding: 10px;
+}
+
+/* for sidenav to take a whole page */
+html, body {
+    margin: 0;
+    height: 100%;
+}

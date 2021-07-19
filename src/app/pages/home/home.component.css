@@ -1,0 +1,82 @@
+table {
+	width: 100%;
+}
+
+.button-to-update{
+	bottom: 25px;
+	position: absolute;
+	left: 30px;
+}
+
+.mat-row:hover {
+	background-color: #bdbdbd;
+	cursor: pointer;
+}
+
+.mat-column-name {
+	word-wrap: break-word !important;
+	white-space: unset !important;
+	flex: 0 0 18% !important;
+	width: 10% !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	word-break: break-word;
+
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.mat-column-symbol {
+	word-wrap: break-word !important;
+	white-space: unset !important;
+	flex: 0 0 18% !important;
+	width: 10% !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	word-break: break-word;
+
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.mat-column-slug {
+	word-wrap: break-word !important;
+	white-space: unset !important;
+	flex: 0 0 25% !important;
+	width: 10% !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	word-break: break-word;
+
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.mat-column-price {
+	word-wrap: break-word !important;
+	white-space: unset !important;
+	flex: 0 0 25% !important;
+	width: 10% !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	word-break: break-word;
+
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.mat-card-content {
+	margin-bottom: 4%;
+}
