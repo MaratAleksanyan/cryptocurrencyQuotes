@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
 
 	constructor(private config: HttpconfigService) 
 	{ 
-		// this.getDevicesInfo()
+		this.getDevicesInfo();
 	}
 
 	ngOnInit(): void {
@@ -25,7 +25,6 @@ export class HomeComponent implements OnInit {
 
   // Getting info from server
 	getDevicesInfo(){
-		// this.overlay.displayProgressSpinner = true;
 		this.config.getConfig(this.getConfigUrl)
 			.subscribe(response => {
 				response ? this.coinsInfo.data = response.data.sort((a,b) => b.quote.USD.market_cap - a.quote.USD.market_cap) : this.coinsInfo.data = <any>[];
