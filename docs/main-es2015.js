@@ -508,7 +508,7 @@ class HomeComponent {
     constructor(config) {
         this.config = config;
         this.coinsInfo = new _angular_material_table__WEBPACK_IMPORTED_MODULE_1__["MatTableDataSource"]();
-        this.getConfigUrl = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=30';
+        this.getConfigUrl = '/web/v1/cryptocurrency/listings/latest?start=1&limit=30';
         this.displayedColumns = ['name', 'symbol', 'slug', 'price', 'percent_change_1h', 'percent_change_24h', 'market_cap', 'last_updated'];
         this.getDevicesInfo();
     }
