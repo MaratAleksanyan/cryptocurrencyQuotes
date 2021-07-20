@@ -11,7 +11,7 @@ import { Validators, FormBuilder, FormGroup, FormControl, AbstractControl } from
 export class HomeComponent implements OnInit {
 
 	public coinsInfo = new MatTableDataSource<any[]>();
-	private getConfigUrl: string = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=30';
+	private getConfigUrl: string = '/web/v1/cryptocurrency/listings/latest?start=1&limit=30';
 	displayedColumns: string[] = ['name', 'symbol', 'slug', 'price', 'percent_change_1h', 'percent_change_24h', 'market_cap', 'last_updated'];
 
 
