@@ -16,7 +16,7 @@ table {
 .mat-column-name {
 	word-wrap: break-word !important;
 	white-space: unset !important;
-	flex: 0 0 18% !important;
+	flex: 0 0 15% !important;
 	width: 10% !important;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -32,7 +32,7 @@ table {
 .mat-column-symbol {
 	word-wrap: break-word !important;
 	white-space: unset !important;
-	flex: 0 0 18% !important;
+	flex: 0 0 10% !important;
 	width: 10% !important;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -48,7 +48,7 @@ table {
 .mat-column-slug {
 	word-wrap: break-word !important;
 	white-space: unset !important;
-	flex: 0 0 25% !important;
+	flex: 0 0 15% !important;
 	width: 10% !important;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
@@ -64,7 +64,71 @@ table {
 .mat-column-price {
 	word-wrap: break-word !important;
 	white-space: unset !important;
+	flex: 0 0 28% !important;
+	width: 10% !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	word-break: break-word;
+
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.mat-column-percent_change_1h {
+	word-wrap: break-word !important;
+	white-space: unset !important;
+	flex: 0 0 28% !important;
+	width: 10% !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	word-break: break-word;
+
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.mat-column-percent_change_24h {
+	word-wrap: break-word !important;
+	white-space: unset !important;
 	flex: 0 0 25% !important;
+	width: 10% !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	word-break: break-word;
+
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.mat-column-market_cap {
+	word-wrap: break-word !important;
+	white-space: unset !important;
+	flex: 0 0 25% !important;
+	width: 10% !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	word-break: break-word;
+
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.mat-column-last_updated {
+	word-wrap: break-word !important;
+	white-space: unset !important;
+	flex: 0 0 20% !important;
 	width: 10% !important;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
